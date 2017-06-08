@@ -9,8 +9,13 @@
 </head>
 <body>
     <div class="blur"></div>
-    <div class="content">
-        <img src="./divay.png" alt="">
+    <div class="nav" id="nav">
+        <ul>
+            <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content" id="about">
+        <img src="./divay.png" alt="" id="abt">
         <div class="title">Hi! I'm Divay Prakash.</div>
         <div class="description">
             <p>
@@ -19,12 +24,13 @@
             <p>
                 I am an enthusiastic person who enjoys overcoming challenge and achieving personal goals. My present career aim is to work within IT . The opportunity to learn new skills and work with new technologies is particularly attractive to me. I have a clear, logical mind with a practical approach to problem solving and a drive to see things through to completion. Working with a team to analyze and solve problems gives me immense joy. I am creative and artistic and have a great eye for detail, being a true perfectionist at heart. I am eager to learn and I enjoy overcoming challenges. I have strong technical skills as well as excellent interpersonal skills. You will find me to be extremely hardworking, and able to juggle multiple tasks with great time management, or focus all my energy on just one too.
             </p>
-            <div class="subtitle">
-                Further
+            <div class="subtitle" id="contact">
+                Get in Touch!
             </div>
             <p>
-                Check out my social profiles at the links below.
+                I'd love to hear from you! Drop me a line.
             </p>
+            <a href="https://divayprakash.github.io/"><i class="fa fa-globe fa-fw"></i> divayprakash.github.io</a><br />
             <a href="mailto:divayprakash3@gmail.com"><i class="fa fa-envelope-o fa-fw"></i> divayprakash3@gmail.com</a><br />
             <a href="https://github.com/divayprakash/"><i class="fa fa-github fa-fw"></i> divayprakash</a><br />
             <a href="https://www.linkedin.com/in/divayprakash/"><i class="fa fa-linkedin fa-fw"></i> /in/divayprakash</a><br />
@@ -34,5 +40,13 @@
             Made with &#128153; by <a href="https://divayprakash.github.io/">Divay Prakash</a>
         </div>
     </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            var navHeight = document.getElementById("nav").clientHeight;
+            var margin = (Math.max(document.documentElement.clientHeight, window.innerHeight || 0)) / 20;
+            var element = document.getElementById("about");
+            document.getElementById("about").style.marginTop = (navHeight + margin) + 'px';
+        }, false);
+    </script>
 </body>
 </html>
