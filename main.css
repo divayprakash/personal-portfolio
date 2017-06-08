@@ -95,6 +95,18 @@ a:hover {
     filter: grayscale(0);
 }
 
+.project-image {
+    margin: 0;
+    width: 30%;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    filter: none;
+}
+
 .content .title, .content .description .subtitle{
     font-family: 'Abel', sans-serif;
 }
